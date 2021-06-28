@@ -21,6 +21,8 @@ OCTAVI_BUILD_TYPE := Official
 OCTAVI_DEVICE_MAINTAINER := ~Pratyaksh.Bharadwaj~
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SCREEN_DENSITY := 440
+TARGET_HAS_NOTCH := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := octavi_sweet
