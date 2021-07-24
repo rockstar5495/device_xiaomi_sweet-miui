@@ -45,7 +45,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     android.hardware.camera.common@1.0 \
     android.hardware.camera.device@3.3:64 \
     android.hardware.camera.device@3.4:64 \
