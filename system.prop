@@ -3,3 +3,6 @@ ro.octavi.maintainer=~Pratyaksh.Bharadwaj~ \
 ro.octavi.version=Official \
 ro.octavi.branding.version=2.7 \
 ro.octavi.cpu=Snapdragon732G
+
+# Dialer Blurs
+dialer.supports.blur=true
