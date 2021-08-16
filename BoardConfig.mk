@@ -25,7 +25,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
+TARGET_OTA_ASSERT_DEVICE := sweet,sweetin,sweetinpro
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -57,7 +57,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := sweet_user_defconfig
+TARGET_KERNEL_CONFIG := vendor/sweet_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 
