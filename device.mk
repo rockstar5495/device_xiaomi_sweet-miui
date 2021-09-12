@@ -178,6 +178,8 @@ PRODUCT_USES_QCOM_HARDWARE := true
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
 -include $(LOCAL_PATH)/system.prop
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Soong namespaces
