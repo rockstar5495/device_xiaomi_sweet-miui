@@ -158,6 +158,13 @@ void vendor_load_properties() {
         description = "sweet_eea-user 11 RKQ1.200826.002 V12.0.10.0.RKFEUXM release-keys";
         marketname = "Redmi Note 10 Pro";
         mod_device = "sweet_eea_global";
+    } else if (region == "GLOBAL") {
+        model = "M2101K6G";
+        device = "sweet";
+        fingerprint = "Redmi/sweet_global/sweet:11/RKQ1.200826.002/V12.0.10.0.RKFMIXM:user/release-keys";
+        description = "sweet-user 11 RKQ1.200826.002 V12.0.10.0.RKFMIXM release-keys";
+        marketname = "Redmi Note 10 Pro";
+        mod_device = "sweet_global";
     } else if (region == "INDIA") {
         if (sku == "std") {
             model = "M2101K6P";
@@ -177,11 +184,8 @@ void vendor_load_properties() {
         }
 
     // SafetyNet workaround
-    fingerprint = "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys";
-    description = "redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys";
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.boot.flash.locked", "1");
-    workaround_snet_properties();
 
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
