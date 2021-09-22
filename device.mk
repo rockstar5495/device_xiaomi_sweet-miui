@@ -95,9 +95,9 @@ PRODUCT_COPY_FILES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+    FMRadio \
+    libfmjni \
+    fm-commonsys
 
 # HALS
 SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio
