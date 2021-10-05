@@ -47,24 +47,6 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0 \
-    android.hardware.camera.device@3.3:64 \
-    android.hardware.camera.device@3.4:64 \
-    android.hardware.camera.device@3.5:64 \
-    android.hardware.camera.provider@2.4 \
-    android.hardware.camera.provider@2.4-impl:32 \
-    android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.5:64 \
-    android.hardware.camera.provider@2.6:64 \
-    vendor.qti.hardware.camera.device@1.0 \
-    camera.msm8953 \
-    libcamshim \
-    libmm-qcamera \
-    libui_shim \
-    libmm-qcamera
-
 PRODUCT_COPY_FILES += \
    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/a2dp_audio_policy_configuration.xml \
    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/bluetooth_audio_policy_configuration.xml
@@ -224,7 +206,3 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
-
-# GCam Go
-PRODUCT_PACKAGES += \
-    GCam
