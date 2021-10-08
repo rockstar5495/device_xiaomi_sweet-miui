@@ -25,3 +25,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.debuggable=1 \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=adb,mtp
+
+# FM
+hw.fm.init=0

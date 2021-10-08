@@ -77,3 +77,6 @@ on property:vendor.post_boot.parsed=1
 # FM
     chown system system /sys/module/radio_iris_transport/parameters/fmsmd_set
     chmod 0660 /sys/module/radio_iris_transport/parameters/fmsmd_set
+
+on property:hw.fm.init=*
+    write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
