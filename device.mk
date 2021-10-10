@@ -166,11 +166,6 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/qcom-caf/sm8150
-
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
