@@ -171,6 +171,10 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/xiaomi
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
