@@ -75,6 +75,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# Touchfeature
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.touchfeature@1.0 \
+    vendor.xiaomi.hardware.touchfeature@1.0.vendor
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
