@@ -8,12 +8,11 @@
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Xtended Stuff
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := Pratyaksh.Bharadwaj
-XTENDED_BUILD_DONATE_URL := https://paypal.me/pratyakshb5495
+OCTAVI_BUILD_TYPE := Official
+OCTAVI_DEVICE_MAINTAINER := Pratyaksh.Bharadwaj
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
@@ -21,7 +20,7 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_HAS_NOTCH := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_sweet
+PRODUCT_NAME := octavi_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10 Pro

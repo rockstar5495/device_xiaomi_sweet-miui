@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_sweet.mk
+    $(LOCAL_DIR)/octavi_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_sweet-user \
-    xtended_sweet-userdebug \
-    xtended_sweet-eng
+    octavi_sweet-user \
+    octavi_sweet-userdebug \
+    octavi_sweet-eng
