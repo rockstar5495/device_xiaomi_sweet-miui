@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 
 # ANXCamera
-$(call inherit-product-if-exists, vendor/ANXCamera/config.mk)
+$(call inherit-product, vendor/ANXCamera/anx-vendor.mk)
 
 # The first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -166,6 +166,7 @@ PRODUCT_USES_QCOM_HARDWARE := true
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
 -include $(LOCAL_PATH)/vendor_prop.mk
+-include $(LOCAL_PATH)/system.prop
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Soong namespaces
